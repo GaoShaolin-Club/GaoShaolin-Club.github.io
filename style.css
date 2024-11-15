@@ -83,6 +83,7 @@ nav a {
     /* transition: background-color .2s; */
     transition: color .2s;
 }
+
 nav a:hover {
     /* background-color: var(--color-blue-light); */
     color: var(--color-blue-light);
@@ -108,6 +109,7 @@ nav a:hover {
 
     transition: all .2s;
 }
+
 .cta-contact:hover {
     background-color: white;
     color: var(--color-blue-light);
@@ -122,13 +124,15 @@ nav a:hover {
     cursor: pointer;
 }
 
-.hambar1, .hambar2, .hambar3 {
+.hambar1,
+.hambar2,
+.hambar3 {
     background-color: white;
     height: 4px;
     width: 25px;
     margin: 5px;
     transform-origin: left;
-    transition: all .2s;  
+    transition: all .2s;
 }
 
 .toggle-menu .hambar1 {
@@ -153,9 +157,9 @@ main {
 .section-hero {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows:  repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 
-    grid-template-areas: 
+    grid-template-areas:
         "hero-title hero-img"
         "hero-title hero-img"
         "hero-subtitle hero-img"
@@ -172,26 +176,32 @@ main {
     width: 150%;
     height: 300px;
 }
+
 .divider.bg {
     /* transform: rotate(-10deg) translate(-50px, -120px); */
     background-color: var(--color-dark);
 }
+
 .divider.bg.top {
     transform: rotate(6deg) translate(-50px, -90px);
     z-index: 1;
 }
+
 .divider.bg.top-hero {
     transform: rotate(10deg) translate(-50px, -90px);
     z-index: 1;
 }
+
 .divider.bg.top.reverse {
     top: 0;
     transform: rotate(-6deg) translate(-50px, -240px);
 }
+
 .divider.bg.bottom {
     transform: rotate(-5deg) translate(-50px, -110px);
     z-index: 2;
 }
+
 .divider.bg.bottom.reverse {
     transform: rotate(5deg) translate(-50px, -110px);
 }
@@ -199,16 +209,19 @@ main {
 .divider.green {
     background-color: var(--color-green-dark);
 }
+
 .divider.green.top {
     transform: rotate(8deg) translate(-50px, -80px);
     z-index: 0;
 }
+
 .divider.green.bottom {
     transform: rotate(-3deg) translate(-50px, -120px);
     z-index: 2;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-shadow: -.2rem .2rem var(--color-dark);
 }
 
@@ -222,6 +235,7 @@ main h1 {
     font-size: 4rem;
     color: white;
 }
+
 main h1 span {
     color: lime;
 }
@@ -253,6 +267,7 @@ main h3 {
 
     transition: background-color .2s, color .2s;
 }
+
 .cta-main:hover {
     background-color: white;
     color: var(--color-red);
@@ -282,7 +297,8 @@ section {
     padding: 12rem 5rem;
 }
 
-section.about, section.information {
+section.about,
+section.information {
     margin-top: 5rem;
 }
 
@@ -328,12 +344,13 @@ section.about, section.information {
 
 .coach-card {
     /* background-color: white; */
-    
+
     width: 300px;
     text-align: center;
 
     transition: all 0.2s;
 }
+
 .coach-card:hover {
     transform: scale(105%, 105%);
 }
@@ -371,6 +388,50 @@ section.about, section.information {
     order: 2;
 }
 
+.videodisplayer {
+
+    grid-template-columns: 1fr 60%;
+    gap: 1rem;
+
+    padding: 1rem;
+    background-color: var(--color-dark);
+}
+
+.videodisplayer-wrapper {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* 设置子元素之间的间距 */
+    padding: 10px;
+    /* 容器的内边距 */
+    justify-content: flex-start;
+    /* 子元素从容器的起始位置开始排列 */
+}
+
+.box video {
+    height: 200px;
+    /* 每个div的高度 */
+    background-color: #f0f0f0;
+    /* 每个div的背景色 */
+    border: 1px solid #ccc;
+    /* 每个div的边框 */
+    box-sizing: border-box;
+    /* 边框和内边距包含在宽度内 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    /* 每个div的外边距 */
+    color: #333;
+    /* 文本颜色 */
+    font-size: 16px;
+    /* 文本大小 */
+    flex-grow: 1;
+    /* 允许box增长填充额外空间 */
+}
+
+
+
 .displayer-image {
     position: relative;
     display: flex;
@@ -394,13 +455,16 @@ section.about, section.information {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .displayer-button:hover {
     background-color: white;
     color: black;
 }
+
 .displayer-button.left {
     left: 1rem;
 }
+
 .displayer-button.right {
     right: 1rem;
 }
@@ -432,6 +496,7 @@ section.about, section.information {
     background-color: black;
     border: 2px solid transparent;
 }
+
 .displayer-gallery img:hover {
     border: 2px solid var(--color-blue-dark);
 }
@@ -483,6 +548,7 @@ section.about, section.information {
     background-color: var(--color-dark);
     transition: all 0.2s;
 }
+
 .pingpong-class:hover {
     transform: translateY(-.25rem);
     box-shadow: 0px .25rem var(--color-dark);
@@ -498,13 +564,15 @@ section.about, section.information {
 
     background-color: var(--color-green-dark);
 }
+
 .pingpong-class h5 {
     color: var(--color-green-light);
     font-style: italic;
     padding-bottom: .1rem;
 }
 
-.info-location, .info-phone {
+.info-location,
+.info-phone {
     display: flex;
     gap: 1rem;
     justify-self: center;
@@ -512,13 +580,16 @@ section.about, section.information {
     font-size: 1.2rem;
 }
 
-.info-location i, .info-phone i {
+.info-location i,
+.info-phone i {
     text-shadow: -0.1rem 0.1rem black;
     font-size: 1.8rem;
 }
+
 .info-location i {
     color: orange;
 }
+
 .info-phone i {
     color: lime;
 }
@@ -578,7 +649,10 @@ form label {
 .message-section label {
     font-weight: bold;
 }
-input[type="text"], input[type="email"], textarea {
+
+input[type="text"],
+input[type="email"],
+textarea {
     padding: .5rem;
     border: 1px solid var(--color-blue-dark);
     transition: all 0.2;
@@ -586,21 +660,33 @@ input[type="text"], input[type="email"], textarea {
     font-size: 1.1rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border: 1px solid var(--color-green-light);
     outline: 1px solid var(--color-green-light);
 }
 
-.name {order: 1;}
-#name {order: 3;}
+.name {
+    order: 1;
+}
 
-.surname {order: 2;}
-#surname {order: 4;}
+#name {
+    order: 3;
+}
+
+.surname {
+    order: 2;
+}
+
+#surname {
+    order: 4;
+}
 
 .email {
     order: 5;
     grid-column: span 2;
 }
+
 #email {
     order: 6;
     grid-column: span 2;
@@ -610,6 +696,7 @@ input:focus, textarea:focus {
     order: 7;
     grid-column: span 2;
 }
+
 #message {
     order: 8;
     grid-column: span 2;
@@ -617,10 +704,10 @@ input:focus, textarea:focus {
     resize: none;
 }
 
-.info-button { 
+.info-button {
     order: 9;
     grid-column: span 2;
-    
+
     padding: 1rem 1.5rem;
     width: fit-content;
 
@@ -635,6 +722,7 @@ input:focus, textarea:focus {
 
     transition: background-color .2s, color .2s;
 }
+
 .info-button:hover {
     background-color: white;
     color: var(--color-green-dark);
@@ -720,6 +808,7 @@ footer a {
     gap: 1rem;
     align-items: center;
 }
+
 footer a:hover {
     color: var(--color-blue-light);
 }
@@ -755,6 +844,7 @@ footer h4 {
     cursor: pointer;
     transition: all .2s;
 }
+
 .go-up:hover {
     background-color: white;
     color: var(--color-green-dark);
@@ -777,6 +867,7 @@ footer h4 {
     .displayer {
         grid-template-columns: 1fr 70%;
     }
+
     .displayer-gallery img {
         width: 80px;
         height: 80px;
@@ -796,6 +887,7 @@ footer h4 {
         overflow-y: hidden;
         height: 4rem;
     }
+
     nav.toggle-menu {
         height: 100vh;
     }
@@ -818,6 +910,7 @@ footer h4 {
         transform: translateX(50vw);
         visibility: hidden;
     }
+
     nav ul.toggle-menu {
         height: 100vh;
 
@@ -831,10 +924,12 @@ footer h4 {
         font-weight: normal;
         font-size: 1.2rem;
     }
+
     .cta-contact:hover {
         background-color: transparent;
     }
-    .cta-contact i{
+
+    .cta-contact i {
         display: none;
     }
 
@@ -864,11 +959,13 @@ footer h4 {
         padding: 2rem;
         text-align: center;
     }
+
     .sub-slogan {
         order: 3;
         padding: 2rem;
         text-align: center;
     }
+
     .cta-main {
         order: 4;
     }
@@ -876,6 +973,7 @@ footer h4 {
     main img {
         top: -3rem;
     }
+
     main img.invisible {
         order: 1;
         width: 700px;
@@ -890,6 +988,7 @@ footer h4 {
     .about-text {
         text-align: center;
     }
+
     .about-text h3 {
         font-size: 1.8rem;
     }
@@ -897,6 +996,7 @@ footer h4 {
     .about-coaches {
         padding: 2rem;
     }
+
     .cards {
         gap: 1rem;
     }
@@ -906,13 +1006,18 @@ footer h4 {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-    
+
         padding: 1rem;
         background-color: var(--color-dark);
     }
 
-    .displayer-image { order: 1;}
-    .displayer-gallery {order: 2;}
+    .displayer-image {
+        order: 1;
+    }
+
+    .displayer-gallery {
+        order: 2;
+    }
 
 
     .section-information {
@@ -934,7 +1039,8 @@ footer h4 {
         width: 100%;
     }
 
-    .info-location, .info-phone  {
+    .info-location,
+    .info-phone {
         margin: 1rem;
         display: flex;
         align-self: center;
@@ -977,7 +1083,7 @@ footer h4 {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-    
+
         padding: 1rem;
         background-color: var(--color-dark);
     }
@@ -1000,12 +1106,22 @@ footer h4 {
         display: flex;
         flex-direction: column;
     }
-    
-    .name {order: 1;}
-    #name {order: 2;}
 
-    .surname {order: 3;}
-    #surname {order: 4;}
+    .name {
+        order: 1;
+    }
+
+    #name {
+        order: 2;
+    }
+
+    .surname {
+        order: 3;
+    }
+
+    #surname {
+        order: 4;
+    }
 
     form input[type="submit"] {
         align-self: center;
