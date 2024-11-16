@@ -322,6 +322,10 @@ section.information {
     grid-column: 2;
     grid-row: 1;
 }
+.justify-text p{
+    text-align: justify;
+   
+  }
 
 .about-text h3 {
     padding-bottom: 2rem;
