@@ -63,7 +63,7 @@ thumbnails.forEach(thumb => {
 const slideImage = (type) => { //--expects back or next and gives the new img id to selectImage to validate
     const currentImageId = parseId(document.querySelector(".selected").id);
 
-    const newImageId = (type === "back" ? currentImageId - 1 : currentImageId + 1) ;
+    const newImageId = (type === "back" ? currentImageId - 1 : currentImageId + 1);
 
     selectImage(newImageId);
 }
@@ -71,10 +71,10 @@ const slideImage = (type) => { //--expects back or next and gives the new img id
 //--Image Displayer Image Selection--------------------------
 const selectImage = (selectedId) => { //--valdiates id and selects image
     //--checks if selected image is the current one
-    if (document.querySelector(".selected").id === "gal"+selectedId) return null
+    if (document.querySelector(".selected").id === "gal" + selectedId) return null
 
     //--checks if given id is valid
-    const selectedImage = document.getElementById("gal"+selectedId);
+    const selectedImage = document.getElementById("gal" + selectedId);
     if (!selectedImage) return null
 
     //--selects image
@@ -87,7 +87,7 @@ const selectImage = (selectedId) => { //--valdiates id and selects image
 }
 
 const parseId = (idString) => { //--removes prefix of id value and returns integer
-    return parseInt(idString.split("gal")[1], 10 );
+    return parseInt(idString.split("gal")[1], 10);
 }
 
 //--Image Displayer scroll to image fucntion
@@ -97,7 +97,7 @@ const scrollDisplayer = (imageId) => { //--expects valid image id and scrolls to
 
     scrollPosition = imageId * displayerWidth - displayerWidth;
 
-    imageDisplayer.scrollTo(scrollPosition, 0);    
+    imageDisplayer.scrollTo(scrollPosition, 0);
 }
 
 
@@ -108,7 +108,7 @@ const dialogueBox = document.querySelector(".dialogue-box");
 
 messageForm.addEventListener("submit", ev => {
     ev.preventDefault(); //--For ignoring Submit page reload
-    dialogueBox.classList.remove("hidden"); 
+    dialogueBox.classList.remove("hidden");
 });
 
 const dialogueBtn = document.querySelector(".dialogue-box button");
