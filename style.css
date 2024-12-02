@@ -241,6 +241,7 @@ main h3 {
     font-size: 1.2rem;
     font-weight: bold;
     transition: background-color .2s, color .2s;
+    margin-top: -2em;
 }
 
 .cta-main:hover {
