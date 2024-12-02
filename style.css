@@ -340,7 +340,20 @@ section.information {
     background-color: var(--color-blue-dark);
     box-shadow: -2px 2px black;
 }
-
+#imgML{
+    width: 20em;
+    height: 28em;    
+   
+    display: flex; 
+    justify-content: center;
+     align-items: center; 
+    overflow: hidden;       /* 防止图片超出容器 */
+}
+#imgML img
+{
+    max-width: 100%; 
+    height: auto;
+}
 
 /*--Gallery Section-------------------------------------*/
 
@@ -376,29 +389,29 @@ section.information {
     padding: 10px;
     /* 容器的内边距 */
     justify-content: flex-start;
-    /* 子元素从容器的起始位�?开始排�? */
+    /* 子元素从容器的起始位�?开始排�? */
 }
 
 .box video {
     height: 200px;
-    /* 每个div的高�? */
+    /* 每个div的高�? */
     background-color: #f0f0f0;
-    /* 每个div的背�?�? */
+    /* 每个div的背�?�? */
     border: 1px solid #ccc;
-    /* 每个div的边�? */
+    /* 每个div的边�? */
     box-sizing: border-box;
-    /* 边�?�和内边距包�?在�?�度�? */
+    /* 边�?�和内边距包�?在�?�度�? */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
-    /* 每个div的�?�边�? */
+    /* 每个div的�?�边�? */
     color: #333;
     /* 文本颜色 */
     font-size: 16px;
     /* 文本大小 */
     flex-grow: 1;
-    /* 允�?�box增长�?充�?��?�空�? */
+    /* 允�?�box增长�?充�?��?�空�? */
 }
 
 .displayer-image {
@@ -890,7 +903,7 @@ footer h4 {
     .sub-slogan {
         order: 3;
         /* padding: 2rem;*/
-        text-align: center;
+        text-align: left;
     }
     .cta-main {
         order: 4;
